@@ -411,7 +411,7 @@ class Duolingo(object):
 
         if not lang:
             lang = self.user_data.learning_language
-        else:
+        elif not self._is_current_language(lang):
             self.switch_language(lang)
 
         fields = ['streak', 'language_string', 'level_progress',
@@ -681,6 +681,9 @@ class Duolingo(object):
         self.voice_url_dict[lang_abbr][word].add(url)
 
     def get_related_words(self, word, language_abbr=None):
+
+        language_abbr = self._change_lang_to_abbr(language_abbr)
+
         if not language_abbr:
             language_abbr = self.user_data.learning_language
 
