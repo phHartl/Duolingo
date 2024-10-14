@@ -5,7 +5,7 @@
 [![PyPI version fury.io](https://badge.fury.io/py/duolingo-api.svg)](https://pypi.python.org/pypi/duolingo-api/)
 
 Unofficial Duolingo API Written in Python. This is mostly a collection of functions that give you common data directly from the public [API](https://www.duolingo.com/2017-06-30/users?username=username) and internal [API](https://www.duolingo.com/users/username) 
-resource dictionary.
+resource dictionary. For a comprehensive overview of different access methods, take a look at this [report](http://dx.doi.org/10.13140/RG.2.2.26638.98888).
 
 ### Installation
 
